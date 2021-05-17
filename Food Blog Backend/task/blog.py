@@ -55,6 +55,5 @@ while ask_on:
     result_8 = cursor_1.execute(sql, (n, recipe_n, cooking_directions))
 
 
-
 conn.commit()
 conn.close()
