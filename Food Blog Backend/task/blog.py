@@ -55,5 +55,18 @@ while ask_on:
     result_8 = cursor_1.execute(sql, (n, recipe_n, cooking_directions))
 
 
+result = cursor_1.execute('''
+                            PRAGMA foreign_keys = ON;
+                            ''')
+
+
+result_1 = cursor_1.execute('''CREATE TABLE IF NOT EXISTS  serve (
+                                                 serve_id int PRIMARY KEY,
+                                                 recipe_id int NOT NULL,
+                                                 meal_id int NOT NULL
+                                                 );''')
+
+
+
 conn.commit()
 conn.close()

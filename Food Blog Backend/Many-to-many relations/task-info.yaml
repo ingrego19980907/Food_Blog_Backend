@@ -1,32 +1,5 @@
 type: edu
 files:
-- name: blog.py
-  visible: true
-  text: "import sqlite3\n\ndatabase = r'C:\\Python\\Projects\\Food Blog Backend\\\
-    Food Blog Backend\\task\\food_blog.db'\n\nconn = sqlite3.connect(database)\ncursor_1\
-    \ = conn.cursor()\n\nresult = cursor_1.execute('''CREATE TABLE meals (meal_id\
-    \ integer PRIMARY KEY, \n                                        meal_name VARCHAR\
-    \ (20) NOT NULL UNIQUE);''')\n\nresult_2 = cursor_1.execute('''CREATE TABLE ingredients\
-    \ (ingredient_id integer PRIMARY KEY, \n                                     \
-    \           ingredient_name VARCHAR (20) NOT NULL UNIQUE);''')\n\nresult_3 = cursor_1.execute('''CREATE\
-    \ TABLE measures (measure_id integer PRIMARY KEY, \n                         \
-    \                       measure_name VARCHAR (20) UNIQUE);''')\n\nresult_4 = cursor_1.execute('''INSERT\
-    \ INTO meals VALUES (1, 'breakfast'), \n                                     \
-    \       (2, 'brunch'),\n                                            (3, 'lunch'),\n\
-    \                                            (4, 'supper')''')\n\n\nresult_5 =\
-    \ cursor_1.execute('''INSERT INTO ingredients VALUES (1, 'milk'), \n         \
-    \                                   (2, 'cacao'),\n                          \
-    \                  (3, 'strawberry'),\n                                      \
-    \      (4, 'blueberry'),\n                                            (5, 'blackberry'),\n\
-    \                                            (6, 'sugar')''')\n\n\nresult_6 =\
-    \ cursor_1.execute('''INSERT INTO measures VALUES (1, 'ml'), \n              \
-    \                              (2, 'g'),\n                                   \
-    \         (3, 'l'),\n                                            (4, 'cup'),\n\
-    \                                            (5, 'tbsp'),\n                  \
-    \                          (6, 'tsp'),\n                                     \
-    \       (7, 'dsp'),\n                                            (8, '')''')\n\
-    \n\nconn.commit()\nconn.close()\n\n"
-  learner_created: false
 - name: tests.py
   visible: false
   text: |+
@@ -212,6 +185,33 @@ files:
         FoodBlogStage1().run_tests()
 
 
+  learner_created: false
+- name: blog.py
+  visible: true
+  text: "import sqlite3\n\ndatabase = r'C:\\Python\\Projects\\Food Blog Backend\\\
+    Food Blog Backend\\task\\food_blog.db'\n\nconn = sqlite3.connect(database)\ncursor_1\
+    \ = conn.cursor()\n\nresult = cursor_1.execute('''CREATE TABLE meals (meal_id\
+    \ integer PRIMARY KEY, \n                                        meal_name VARCHAR\
+    \ (20) NOT NULL UNIQUE);''')\n\nresult_2 = cursor_1.execute('''CREATE TABLE ingredients\
+    \ (ingredient_id integer PRIMARY KEY, \n                                     \
+    \           ingredient_name VARCHAR (20) NOT NULL UNIQUE);''')\n\nresult_3 = cursor_1.execute('''CREATE\
+    \ TABLE measures (measure_id integer PRIMARY KEY, \n                         \
+    \                       measure_name VARCHAR (20) UNIQUE);''')\n\nresult_4 = cursor_1.execute('''INSERT\
+    \ INTO meals VALUES (1, 'breakfast'), \n                                     \
+    \       (2, 'brunch'),\n                                            (3, 'lunch'),\n\
+    \                                            (4, 'supper')''')\n\n\nresult_5 =\
+    \ cursor_1.execute('''INSERT INTO ingredients VALUES (1, 'milk'), \n         \
+    \                                   (2, 'cacao'),\n                          \
+    \                  (3, 'strawberry'),\n                                      \
+    \      (4, 'blueberry'),\n                                            (5, 'blackberry'),\n\
+    \                                            (6, 'sugar')''')\n\n\nresult_6 =\
+    \ cursor_1.execute('''INSERT INTO measures VALUES (1, 'ml'), \n              \
+    \                              (2, 'g'),\n                                   \
+    \         (3, 'l'),\n                                            (4, 'cup'),\n\
+    \                                            (5, 'tbsp'),\n                  \
+    \                          (6, 'tsp'),\n                                     \
+    \       (7, 'dsp'),\n                                            (8, '')''')\n\
+    \n\nconn.commit()\nconn.close()\n\n"
   learner_created: false
 feedback_link: https://hyperskill.org/projects/167/stages/866/implement#comment
 status: Unchecked
