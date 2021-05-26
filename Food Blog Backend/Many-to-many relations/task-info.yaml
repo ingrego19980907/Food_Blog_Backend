@@ -214,5 +214,8 @@ files:
     \n\nconn.commit()\nconn.close()\n\n"
   learner_created: false
 feedback_link: https://hyperskill.org/projects/167/stages/866/implement#comment
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 26 May 2021 15:54:08 UTC
+record: 3
